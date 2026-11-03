@@ -1,0 +1,23 @@
+# Data manipulation
+numpy>=1.24,<3.0
+pandas>=2.0
+
+# Data visualization
+matplotlib>=3.7
+seaborn>=0.12
+
+# Statistical analysis
+scipy>=1.10
+
+# Machine Learning
+scikit-learn>=1.2
+
+# Deep Learning
+torch>=2.0
+
+# Excel file support
+openpyxl>=3.1
+
+# Jupyter Notebook
+jupyter>=1.0
+ipykernel>=6.25
