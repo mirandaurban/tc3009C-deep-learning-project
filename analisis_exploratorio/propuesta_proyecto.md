@@ -6,10 +6,14 @@ El objetivo de esta etapa es establecer el planteamiento del problema, conocer l
 
 ## Contenido
 
-| Archivo                    | Descripción                                                  |
-| -------------------------- | ------------------------------------------------------------ |
-| `propuesta_proyecto.md`    | Documento con el planteamiento del problema, pregunta de investigación, descripción de los datos, hipótesis y metodología propuesta. |
-| `Propuesta_Proyecto.ipynb` | Notebook con la exploración inicial del dataset, análisis de variables y experimentación preliminar. |
+| Archivo                       | Descripción                                                                                                                                    |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `00_verificacion_datos.ipynb` | Notebook con las verificaciones necesarias tras transformaciones de raw data a Parquet.                                                        |
+| `propuesta_proyecto.md`       | Documento con el planteamiento del problema, pregunta de investigación, descripción de los datos, hipótesis y metodología propuesta.           |
+| `Propuesta_Proyecto.ipynb`    | Notebook entregable con la exploración inicial del dataset, análisis de variables y experimentación preliminar.                                |
+| `Propuesta Proyecto.pdf`      | PDF entregable con la exploración inicial del dataset y propuesta general.                                                                     |
+| `Propuesta_Proyecto.ipynb`    | Notebook entregable con la exploración inicial del dataset, análisis de variables y experimentación preliminar.                                |
+| `01_eda_y_baselines.ipynb`    | Notebook con análisis inicial actualizado para uso de Parquet. Personal, no entregable para un análisis con un approach diferente a los datos. |
 
 ## Alcance de la Primera Entrega
 
@@ -91,10 +95,10 @@ La documentación detallada de esta etapa se encontrará en `../modelo/README.md
 
 ## Referencia Principal
 
-Vickers, A., & Vertosick, E. (2016). *An empirical study of race times in recreational endurance runners*. BMC Sports Science, Medicine and Rehabilitation, 8(1), 26.
+Vickers, A., & Vertosick, E. (2016). _An empirical study of race times in recreational endurance runners_. BMC Sports Science, Medicine and Rehabilitation, 8(1), 26.
 
 https://doi.org/10.1186/s13102-016-0052-y
 
 **Acceso al dataset:** [PubMed Central – Additional File 2](https://pmc.ncbi.nlm.nih.gov/articles/PMC5000509/)
 
-*Proyecto académico desarrollado para TC3009C — Tecnológico de Monterrey, Campus Monterrey.*
+_Proyecto académico desarrollado para TC3009C — Tecnológico de Monterrey, Campus Monterrey._
