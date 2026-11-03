@@ -6,6 +6,9 @@ pandas>=2.0
 matplotlib>=3.7
 seaborn>=0.12
 
+# Parquet engine (para guardar/leer data/processed/)
+pyarrow>=14.0
+
 # Statistical analysis
 scipy>=1.10
 
