@@ -1,0 +1,38 @@
+{
+  "fecha_fin": "2026-11-17 18:21:57",
+  "duracion_s": 85.8,
+  "python": "3.12.10",
+  "torch": "2.15.0",
+  "sklearn": "1.9.1",
+  "pandas": "3.1.0",
+  "numpy": "2.5.4",
+  "sistema": "macOS-27.0.1-arm64-arm-64bit",
+  "dispositivo": "cpu",
+  "config": {
+    "TARGET": "velocity_kmh",
+    "GROUP": "id",
+    "TEST_SIZE": 0.15,
+    "N_FOLDS": 5,
+    "SEED_SPLIT": 42,
+    "SEED_LIST": [
+      0,
+      1,
+      2
+    ],
+    "MLP_CONFIG": {
+      "hidden": [
+        64,
+        32
+      ],
+      "dropout": 0.2,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "epochs": 80,
+      "batch_size": 64
+    },
+    "RIDGE_ALPHA": 1.0
+  },
+  "n_corredores_desarrollo": 1839,
+  "n_corredores_prueba": 325,
+  "corredores_compartidos_dev_prueba": 0
+}

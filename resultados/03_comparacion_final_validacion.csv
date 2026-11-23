@@ -1,0 +1,9 @@
+modelo,protocolo,RMSE,MAE,R²,RMSE_min,RMSE_max
+Mejor MLP A (optimizada),"ES, semillas 100–104",1.888 ± 0.013,1.511 ± 0.013,0.527 ± 0.007,1.874,1.902
+Mejor MLP B (optimizada),"ES, semillas 100–104",1.448 ± 0.006,1.131 ± 0.007,0.722 ± 0.002,1.439,1.453
+MLP A original,"ES, semillas 100–104",1.919 ± 0.007,1.535 ± 0.006,0.511 ± 0.004,1.907,1.926
+MLP B original,"ES, semillas 100–104",1.492 ± 0.019,1.161 ± 0.017,0.705 ± 0.008,1.466,1.516
+MLP A original (02),"80 épocas, semillas 0–4",1.957 ± 0.016,1.554 ± 0.010,0.492 ± 0.008,1.941,1.977
+MLP B original (02),"80 épocas, semillas 0–4",1.519 ± 0.018,1.182 ± 0.021,0.693 ± 0.007,1.509,1.552
+Ridge A,determinista,1.946,1.573,0.497,1.946,1.946
+Ridge B,determinista,1.460,1.145,0.717,1.46,1.46

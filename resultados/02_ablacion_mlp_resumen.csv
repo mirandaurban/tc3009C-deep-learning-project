@@ -1,0 +1,5 @@
+,RMSE,RMSE,MAE,MAE,R2,R2
+,mean,std,mean,std,mean,std
+modelo,,,,,,
+MLP A (sin entreno),1.957,0.016,1.554,0.01,0.492,0.008
+MLP B (con entreno),1.519,0.018,1.182,0.021,0.693,0.007

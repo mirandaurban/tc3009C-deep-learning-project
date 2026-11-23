@@ -24,3 +24,5 @@ openpyxl>=3.1
 # Jupyter Notebook
 jupyter>=1.0
 ipykernel>=6.25
+
+common>=0.1.2

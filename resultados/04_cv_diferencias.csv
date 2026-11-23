@@ -1,0 +1,10 @@
+comparación,métrica,media_por_fold,sd_entre_folds,folds_con_signo_negativo,n_folds,t_orientativa,p_orientativo
+B − A,RMSE,-0.38,0.0699,5,5,-12.161,0.0003
+B − A,MAE,-0.3201,0.065,5,5,-11.0112,0.0004
+B − A,R2,0.1984,0.0481,0,5,9.2284,0.0008
+MLP A − Ridge A,RMSE,-0.0311,0.0355,5,5,-1.9552,0.1222
+MLP A − Ridge A,MAE,-0.0263,0.0222,5,5,-2.652,0.0569
+MLP A − Ridge A,R2,0.017,0.019,0,5,2.0072,0.1152
+MLP B − Ridge B,RMSE,0.0469,0.0329,0,5,3.1853,0.0334
+MLP B − Ridge B,MAE,0.0334,0.0254,0,5,2.9427,0.0423
+MLP B − Ridge B,R2,-0.0208,0.0138,5,5,-3.3717,0.028
