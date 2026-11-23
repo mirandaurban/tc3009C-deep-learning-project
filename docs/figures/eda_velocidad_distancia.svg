@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="470" viewBox="0 0 850 470">
+<rect width="100%" height="100%" fill="white"/>
+<text x="425.0" y="28.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#18324b">Velocidad de carrera según distancia</text>
+<text x="425.0" y="50.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="normal" fill="#52606d">Solo filas de los 1,514 corredores del desarrollo usados en GroupKFold (n=3,597 carreras)</text>
+<rect x="85" y="90" width="720" height="290" fill="white" stroke="#52606d"/>
+<line x1="85" y1="380.0" x2="805" y2="380.0" stroke="#d9e1e8"/>
+<text x="76.0" y="384.0" text-anchor="end" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#52606d">0</text>
+<line x1="85" y1="319.6" x2="805" y2="319.6" stroke="#d9e1e8"/>
+<text x="76.0" y="323.6" text-anchor="end" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#52606d">5</text>
+<line x1="85" y1="259.2" x2="805" y2="259.2" stroke="#d9e1e8"/>
+<text x="76.0" y="263.2" text-anchor="end" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#52606d">10</text>
+<line x1="85" y1="198.8" x2="805" y2="198.8" stroke="#d9e1e8"/>
+<text x="76.0" y="202.8" text-anchor="end" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#52606d">15</text>
+<line x1="85" y1="138.3" x2="805" y2="138.3" stroke="#d9e1e8"/>
+<text x="76.0" y="142.3" text-anchor="end" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#52606d">20</text>
+<text x="18" y="235.0" transform="rotate(-90 18 235.0)" text-anchor="middle" font-family="Arial" font-size="12" fill="#18324b">Velocidad ajustada (km/h)</text>
+<line x1="145.0" y1="195.0" x2="145.0" y2="240.8" stroke="#18324b" stroke-width="2"/><rect x="118.0" y="195.0" width="54" height="45.8" rx="3" fill="#457b9d" fill-opacity=".78" stroke="#18324b"/><line x1="118.0" y1="217.1" x2="172.0" y2="217.1" stroke="#18324b" stroke-width="3"/>
+<text x="145.0" y="400.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">5K</text>
+<line x1="265.0" y1="209.0" x2="265.0" y2="251.6" stroke="#18324b" stroke-width="2"/><rect x="238.0" y="209.0" width="54" height="42.7" rx="3" fill="#457b9d" fill-opacity=".78" stroke="#18324b"/><line x1="238.0" y1="230.7" x2="292.0" y2="230.7" stroke="#18324b" stroke-width="3"/>
+<text x="265.0" y="400.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">10K</text>
+<line x1="385.0" y1="198.8" x2="385.0" y2="249.6" stroke="#18324b" stroke-width="2"/><rect x="358.0" y="198.8" width="54" height="50.8" rx="3" fill="#2a9d8f" fill-opacity=".78" stroke="#18324b"/><line x1="358.0" y1="226.0" x2="412.0" y2="226.0" stroke="#18324b" stroke-width="3"/>
+<text x="385.0" y="400.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">5mi</text>
+<line x1="505.0" y1="210.9" x2="505.0" y2="252.3" stroke="#18324b" stroke-width="2"/><rect x="478.0" y="210.9" width="54" height="41.4" rx="3" fill="#2a9d8f" fill-opacity=".78" stroke="#18324b"/><line x1="478.0" y1="230.4" x2="532.0" y2="230.4" stroke="#18324b" stroke-width="3"/>
+<text x="505.0" y="400.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">10mi</text>
+<line x1="625.0" y1="217.6" x2="625.0" y2="254.2" stroke="#18324b" stroke-width="2"/><rect x="598.0" y="217.6" width="54" height="36.6" rx="3" fill="#e9c46a" fill-opacity=".78" stroke="#18324b"/><line x1="598.0" y1="237.3" x2="652.0" y2="237.3" stroke="#18324b" stroke-width="3"/>
+<text x="625.0" y="400.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">Media maratón</text>
+<line x1="745.0" y1="221.6" x2="745.0" y2="256.1" stroke="#18324b" stroke-width="2"/><rect x="718.0" y="221.6" width="54" height="34.5" rx="3" fill="#f4a261" fill-opacity=".78" stroke="#18324b"/><line x1="718.0" y1="239.7" x2="772.0" y2="239.7" stroke="#18324b" stroke-width="3"/>
+<text x="745.0" y="400.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">Maratón</text>
+<text x="425.0" y="445.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#52606d">Box: percentiles 25–75; línea: mediana. Valores atípicos no dibujados.</text>
+</svg>

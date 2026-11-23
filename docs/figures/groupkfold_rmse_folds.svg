@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="490" viewBox="0 0 850 490">
+<rect width="100%" height="100%" fill="white"/>
+<text x="425.0" y="28.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#18324b">RMSE por fold de GroupKFold</text>
+<text x="425.0" y="50.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="normal" fill="#52606d">MLP: promedio de cinco semillas dentro de fold; Ridge: una estimación por fold</text>
+<rect x="85" y="90" width="720" height="290" fill="white" stroke="#52606d"/>
+<line x1="85" y1="380.0" x2="805" y2="380.0" stroke="#d9e1e8"/>
+<text x="76.0" y="384.0" text-anchor="end" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#52606d">0</text>
+<line x1="85" y1="314.1" x2="805" y2="314.1" stroke="#d9e1e8"/>
+<text x="76.0" y="318.1" text-anchor="end" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#52606d">0.5</text>
+<line x1="85" y1="248.2" x2="805" y2="248.2" stroke="#d9e1e8"/>
+<text x="76.0" y="252.2" text-anchor="end" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#52606d">1</text>
+<line x1="85" y1="182.3" x2="805" y2="182.3" stroke="#d9e1e8"/>
+<text x="76.0" y="186.3" text-anchor="end" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#52606d">1.5</text>
+<line x1="85" y1="116.4" x2="805" y2="116.4" stroke="#d9e1e8"/>
+<text x="76.0" y="120.4" text-anchor="end" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#52606d">2</text>
+<text x="18" y="235.0" transform="rotate(-90 18 235.0)" text-anchor="middle" font-family="Arial" font-size="12" fill="#18324b">RMSE (km/h)</text>
+<polyline points="157.0,140.7 301.0,115.2 445.0,133.1 589.0,144.7 733.0,122.3" fill="none" stroke="#457b9d" stroke-width="2"/>
+<circle cx="157.0" cy="140.7" r="4" fill="#457b9d"/>
+<circle cx="301.0" cy="115.2" r="4" fill="#457b9d"/>
+<circle cx="445.0" cy="133.1" r="4" fill="#457b9d"/>
+<circle cx="589.0" cy="144.7" r="4" fill="#457b9d"/>
+<circle cx="733.0" cy="122.3" r="4" fill="#457b9d"/>
+<polyline points="157.0,150.5 301.0,123.7 445.0,134.4 589.0,145.2 733.0,122.7" fill="none" stroke="#457b9d" stroke-width="2" stroke-dasharray="6,4"/>
+<rect x="153.0" y="146.5" width="8" height="8" fill="#457b9d"/>
+<rect x="297.0" y="119.7" width="8" height="8" fill="#457b9d"/>
+<rect x="441.0" y="130.4" width="8" height="8" fill="#457b9d"/>
+<rect x="585.0" y="141.2" width="8" height="8" fill="#457b9d"/>
+<rect x="729.0" y="118.7" width="8" height="8" fill="#457b9d"/>
+<polyline points="157.0,196.7 301.0,175.6 445.0,195.7 589.0,195.7 733.0,194.1" fill="none" stroke="#e76f51" stroke-width="2"/>
+<circle cx="157.0" cy="196.7" r="4" fill="#e76f51"/>
+<circle cx="301.0" cy="175.6" r="4" fill="#e76f51"/>
+<circle cx="445.0" cy="195.7" r="4" fill="#e76f51"/>
+<circle cx="589.0" cy="195.7" r="4" fill="#e76f51"/>
+<circle cx="733.0" cy="194.1" r="4" fill="#e76f51"/>
+<polyline points="157.0,187.7 301.0,173.5 445.0,192.8 589.0,191.1 733.0,181.9" fill="none" stroke="#e76f51" stroke-width="2" stroke-dasharray="6,4"/>
+<rect x="153.0" y="183.7" width="8" height="8" fill="#e76f51"/>
+<rect x="297.0" y="169.5" width="8" height="8" fill="#e76f51"/>
+<rect x="441.0" y="188.8" width="8" height="8" fill="#e76f51"/>
+<rect x="585.0" y="187.1" width="8" height="8" fill="#e76f51"/>
+<rect x="729.0" y="177.9" width="8" height="8" fill="#e76f51"/>
+<text x="157.0" y="400.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">Fold 1</text>
+<text x="301.0" y="400.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">Fold 2</text>
+<text x="445.0" y="400.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">Fold 3</text>
+<text x="589.0" y="400.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">Fold 4</text>
+<text x="733.0" y="400.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">Fold 5</text>
+<line x1="450" y1="424" x2="474" y2="424" stroke="#457b9d" stroke-width="2"/>
+<text x="480.0" y="428.0" text-anchor="start" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">Ridge A</text>
+<line x1="620" y1="424" x2="644" y2="424" stroke="#457b9d" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="650.0" y="428.0" text-anchor="start" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">MLP A</text>
+<line x1="450" y1="444" x2="474" y2="444" stroke="#e76f51" stroke-width="2"/>
+<text x="480.0" y="448.0" text-anchor="start" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">Ridge B</text>
+<line x1="620" y1="444" x2="644" y2="444" stroke="#e76f51" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="650.0" y="448.0" text-anchor="start" font-family="Arial,sans-serif" font-size="10" font-weight="normal" fill="#18324b">MLP B</text>
+</svg>
