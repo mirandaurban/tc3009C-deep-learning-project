@@ -50,59 +50,66 @@ Los resultados documentados son compatibles con utilidad predictiva adicional de
 
 ## Código y ejecución
 
-Los notebooks son la evidencia y el registro de la experimentación histórica. Los módulos de `src/` contienen scripts modulares reutilizables de carga, variables, preprocesamiento, modelos y utilidades experimentales
+La entrega se ejecuta como notebooks, en este orden:
 
-macOS / Linux:
+1. `analisis_exploratorio/00_verificacion_datos.ipynb`
+2. `analisis_exploratorio/01_eda_y_baselines.ipynb`
+3. `experimentos/02_ablation_experiment.ipynb`
+4. `experimentos/03_hyperparameter_optimization.ipynb`
+5. `experimentos/04_cross_validation.ipynb`
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
+Instala las dependencias declaradas en `requirements.txt` y ejecuta cada notebook desde la raíz del repositorio. Los notebooks 02–04 escriben sus CSV en `resultados/`; una ejecución normal vuelve a generar esos archivos.
 
-Windows PowerShell:
+`src/common.py` reúne las funciones compartidas por 03 y 04. `src/data_processing.py` prepara `data/processed/df_long.parquet` desde el Excel fuente; ejecutar `python -m src.data_processing` lo sobrescribe.
 
-```powershell
-py -m venv .venv
-.venv\Scripts\Activate.ps1
-```
+## Verificación medida
 
-Después de activar el entorno:
+Se ejecutaron los cinco notebooks en orden con `nbconvert --execute`, sobre una copia temporal del repositorio. La ejecución completa terminó correctamente. Se compararon los CSV generados con los versionados en `resultados/`: 4 de 4 archivos de 02, 5 de 5 de 03 y 10 de 10 de 04 pasaron. Las diferencias numéricas fueron cero en las métricas y tablas comparables, dentro de tolerancias de `1e-6` para Ridge y `1e-3` para MLP. La columna `segundos` de `03_busqueda_etapa1.csv` y `03_busqueda_etapa2.csv` varió como medida de tiempo de ejecución; no se encontró otra diferencia.
 
-```bash
-python -m pip install -r requirements.txt
-python main.py --help
-python main.py validate-data
-python main.py smoke
-python -m unittest discover -s tests -v
-```
+Versiones observadas en el entorno utilizado:
 
-`validate-data` solo verifica el Parquet procesado y sus columnas/objetivo; no crea particiones, lee métricas ni ajusta modelos. `smoke` ajusta Ridge únicamente con datos sintéticos y no accede al dataset del proyecto. Las pruebas unitarias también ajustan una MLP pequeña solo con datos sintéticos. Para reconstruir el Parquet desde el Excel, ejecutar `python -m src.data_processing`; esto sobrescribe `data/processed/df_long.parquet`, por lo que solo debe hacerse deliberadamente.
+- Python 3.12.10
+- PyTorch 2.15.0
+- scikit-learn 1.9.1
+- pandas 3.1.1
 
-No existe un comando de evaluación test. Para estudiar los experimentos históricos, abrir los notebooks numerados en `analisis_exploratorio/` y `experimentos/`; su ejecución integral puede volver a entrenar y escribir resultados, por lo que no forma parte de la validación de este entregable.
+Tiempo real medido en una ejecución completa (24 de noviembre de 2026):
+
+| Notebook | Tiempo |
+| --- | ---: |
+| 00 verificación de datos | 2.30 s |
+| 01 EDA y baselines | 8.57 s |
+| 02 ablación | 18.01 s |
+| 03 búsqueda de hiperparámetros | 913.21 s (15 min 13.21 s) |
+| 04 validación cruzada | 118.80 s (1 min 58.80 s) |
+
+Los tiempos dependen del equipo y de las versiones instaladas; son los observados durante esta verificación.
 
 ## Estructura
 
 ```text
 ├── analisis_exploratorio/
-│   ├── propuesta_proyecto.md
-│   └── Propuesta_Proyecto.ipynb
-│
+│   ├── 00_verificacion_datos.ipynb
+│   └── 01_eda_y_baselines.ipynb
+├── experimentos/
+│   ├── 02_ablation_experiment.ipynb
+│   ├── 03_hyperparameter_optimization.ipynb
+│   └── 04_cross_validation.ipynb
 ├── data/
-│   ├── raw/
-│   │   └── dataset_corredores.xlsx
-│   └── processed/
-│
-├── modelo/
-│   └── README.md
-│
-├── .gitignore
-├── LICENSE
+│   ├── raw/dataset_corredores.xlsx
+│   └── processed/df_long.parquet
+├── resultados/             # CSV producidos por los notebooks 02–04
+├── src/
+│   ├── common.py
+│   └── data_processing.py
+├── archivo/                 # propuesta de Colab y duplicados
+├── docs/
 ├── README.md
 └── requirements.txt
 ```
 
 ## Instalación, dependencias y reproducibilidad
 
-Python 3.10 o posterior. Las versiones mínimas/rangos están en `requirements.txt`
+Python 3.10 o posterior. Las versiones mínimas/rangos están en `requirements.txt`; las versiones y tiempos medidos para esta verificación aparecen arriba.
 
 Licencia del código: MIT. Datos complementarios según los términos indicados por la publicación. Autoría académica: Miranda Urban Solano, Tecnológico de Monterrey, Campus Monterrey.

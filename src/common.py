@@ -1,8 +1,4 @@
-"""Funciones compartidas por los notebooks 02 y 03.
-
-Las firmas y el orden de llamadas a RNG coinciden con el notebook 02,
-así que con épocas fijas se reproducen sus resultados.
-"""
+"""Funciones compartidas por los notebooks 03 y 04."""
 import random
 from pathlib import Path
 
@@ -27,15 +23,6 @@ ENTRENO = ["typical", "max", "sprint", "tempo", "endurancecat", "endurancespeed"
 FEATS_A = DEMO + CARRERA_PRE + OTRAS
 FEATS_B = FEATS_A + ENTRENO
 EXCLUIDAS = {"forma_fisica", "dificultad", "tiempo_ajustado_s", "id", "distancia"}
-
-
-def find_repo_root(start=None):
-    start = Path.cwd() if start is None else Path(start)
-    for p in [start, *start.parents]:
-        if (p / "data" / "processed" / "df_long.parquet").exists():
-            return p
-    raise FileNotFoundError("No se encontró data/processed/df_long.parquet")
-
 
 def load_data(root):
     df = pd.read_parquet(Path(root) / "data" / "processed" / "df_long.parquet")
